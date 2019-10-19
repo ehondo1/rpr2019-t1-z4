@@ -5,7 +5,7 @@ public class Supermarket {
     private Artikl[] artikli=new Artikl[maxBrArtikala];
     private int brArikala=0;
 
-    public vodi dodajArtikl(Artikl artikal) {
+    public void dodajArtikl(Artikl artikal) {
         if(brArikala<maxBrArtikala)
         {
             artikli[brArikala]=artikal;
