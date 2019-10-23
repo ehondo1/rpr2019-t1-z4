@@ -35,5 +35,6 @@ public class Korpa {
     public Artikl[] getArtikli() {
         return kupljeniProizvodi;
     }
+    public void setArtikli(Artikl[] artikli) { this.kupljeniProizvodi=artikli;}
 
 }

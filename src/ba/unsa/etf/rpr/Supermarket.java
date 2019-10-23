@@ -15,6 +15,8 @@ public class Supermarket {
     public Artikl[] getArtikli() {
         return artikli;
     }
+    public void setAtikli(Artikl[] artikli) { this.artikli=artikli;}
+
     public Artikl izbaciArtiklSaKodom(String kod) {
         Artikl proizvod=null;
         for(int i=0;i<brArikala;i++) {
