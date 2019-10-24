@@ -12,7 +12,12 @@ class KorpaTest {
 
     @Test
     void dajUkupnuCijenuArtikala() {
-        Artikl[] proizvodi=
+        Korpa kupljeno=new Korpa();
+        for(int i=0;i<10;i++) {
+            Artikl artikl=new Artikl("Jana",1,"10AA1");
+            kupljeno.dodajArtikl(artikl);
+        }
+        assertEquals(10,kupljeno.dajUkupnuCijenuArtikala());
     }
 
     @Test
