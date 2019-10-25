@@ -16,8 +16,8 @@ public class Korpa {
     public Artikl izbaciArtiklSaKodom(String kod) {
             Artikl izbaceniArtikl=null;
             for(int i=0;i<kupljeno;i++) {
-                izbaceniArtikl=kupljeniProizvodi[i];
                 if(kupljeniProizvodi[i].getKod().equals(kod)) {
+                    izbaceniArtikl=kupljeniProizvodi[i];
                     for(int j=i;j<kupljeno-1;j++)
                         kupljeniProizvodi[j]=kupljeniProizvodi[j+1];
                     kupljeno--;
@@ -36,5 +36,8 @@ public class Korpa {
         return kupljeniProizvodi;
     }
     public void setArtikli(Artikl[] artikli) { this.kupljeniProizvodi=artikli;}
+    public int brojDodanihArtikala() {
+        return kupljeno;
+    }
 
 }
