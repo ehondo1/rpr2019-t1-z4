@@ -20,8 +20,8 @@ public class Supermarket {
     public Artikl izbaciArtiklSaKodom(String kod) {
         Artikl proizvod=null;
         for(int i=0;i<brArikala;i++) {
-            proizvod=artikli[i];
             if(artikli[i].getKod().equals(kod)) {
+                proizvod=artikli[i];
                 for(int j=i;j<brArikala-1;j++)
                     artikli[j]=artikli[j+1];
                 i--;
@@ -29,5 +29,8 @@ public class Supermarket {
             }
         }
         return proizvod;
+    }
+    public int brojUbacenihArtikala() {
+        return brArikala;
     }
 }
